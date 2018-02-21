@@ -1,0 +1,47 @@
+Test1 for xcoord passed.
+Test2 for xcoord passed.
+Test3 for xcoord passed.
+Test4 for xcoord passed.
+Test5 for xcoord passed.
+Test1 for ycoord passed.
+Test2 for ycoord passed.
+Test3 for ycoord passed.
+Test4 for ycoord passed.
+Test5 for ycoord passed.
+Test1 for radius passed.
+Test2 for radius passed.
+Test3 for radius passed.
+Test4 for radius passed.
+Test5 for radius passed.
+Test1 for area passed.
+Test2 for area passed.
+Test3 for area passed.
+Test4 for area passed.
+Test5 for area passed.
+Test1 for circumference passed.
+Test2 for circumference passed.
+Test3 for circumference passed.
+Test4 for circumference passed.
+Test5 for circumference passed.
+Circle Test1 is not inside the box
+Circle Test2 is inside the box
+Circle Test3 is not inside the box
+Circle Test4 is inside the box
+Circle Test5 is not inside the box
+Circle Test1 intersects with Test2.
+Circle Test2 does not intersect with Test3.
+Circle Test3 does not intersect with Test4.
+Circle Test4 does not intersect with Test5.
+Circle Test5 intersects with Test1.
+Test1 for scale passed.
+Test2 for scale passed.
+Test3 for scale passed.
+Test4 for scale passed.
+Test1 for translate passed.
+Test2 for translate passed.
+Test3 for translate passed.
+Test4 for translate passed.
+Test5 for translate passed.
+Test for average passed.
+Test for stdDev passed.
+Test for rank passed.

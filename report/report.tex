@@ -1,0 +1,110 @@
+\documentclass[12pt]{article}
+
+\usepackage{graphicx}
+\usepackage{paralist}
+\usepackage{listings}
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,
+    linkcolor=blue,
+    citecolor=blue,
+    filecolor=blue,
+    urlcolor=blue,
+    unicode=false}
+
+\oddsidemargin 0mm
+\evensidemargin 0mm
+\textwidth 160mm
+\textheight 200mm
+
+\pagestyle {plain}
+\pagenumbering{arabic}
+
+\newcounter{stepnum}
+
+\title{Assignment 1 Report}
+\author{Tasnim Bari Noshin(noshint)}
+
+\begin {document}
+
+\maketitle
+
+The purpose of this software design exercise is to write a Python program that
+creates, uses, and tests an ADT that stores circles.  The program consist of the
+following files: {\tt CircleADT.py}, {\tt Statistics.py}, {\tt testCircles.py}
+and {\tt Makefile}, as shown in Appendices~\ref{CircleSect} to~\ref{MakefileSect}.
+
+My partner's files:{\tt CircleADT.py} and{\tt Statistics.py}, is shown in Appendices ~\ref{PartnerCircleSect} to ~\ref{PartnerStatisticsSect}.
+
+A discussion comparing my test reults and my partner's test results is shown in Appendix ~\ref{Discussion}.
+
+\newpage
+
+\section{Testing of the Original Program}
+
+\lstset{language=Python, basicstyle=\tiny,breaklines=true,showspaces=false,showstringspaces=false,breakatwhitespace=true}
+
+
+\subsection{Code for CircleADT.py} \label{CircleSect}
+
+\noindent \lstinputlisting{../src/CircleADT.py}
+
+\newpage
+
+\subsection{Code for Statistics.py} \label{StatisticsSect}
+
+\noindent \lstinputlisting{../src/Statistics.py}
+
+\newpage
+
+\subsection{Code for testCircles.py} \label{testSect}
+
+\noindent \lstinputlisting{../src/testCircles.py}
+
+\newpage
+
+\subsection{test result for original code} \label{ResultSect}
+
+\noindent \lstinputlisting{../src/TestResults.txt}
+
+\newpage
+
+\subsection{Makefile} \label{MakefileSect}
+
+\lstset{language=make}
+\noindent \lstinputlisting{../Makefile}
+
+\newpage
+
+\section{Testing of Partner's Program} \label{PartnerCodeSect}
+
+\subsection{Code for Partner's CircleADT.py} \label{PartnerCircleSect}
+
+\lstset{language=Python}
+
+\noindent \lstinputlisting{CircleADT.py}
+~\newline
+
+\newpage
+
+\subsection{Partner's Code: Statistics.py} \label{PartnerStatisticsSect}
+
+\lstset{language=Python}
+
+\noindent \lstinputlisting{Statistics.py}
+~\newline
+
+\newpage
+
+\subsection{test result for partner's code} \label{PartnerResultSect}
+
+\noindent \lstinputlisting{TestResults.txt}
+
+\newpage
+
+\section{Discussion} \label{Discussion}
+
+My partner's rank function fails for my tests. I create an anonymous function using sort(key = lambda value : value[0]) to sort my list of radii and reverse it as the initial result is from the biggest to the smallest value. My partner takes a different approach where she compares the radii with the zero index radius and changes the index if any of the radii is smaller than the first index. 
+
+I used math.pi from python's math library as I find it to be more accurate.
+
+\end {document}
